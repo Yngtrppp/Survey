@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    <div class="survey">
+    <h1 id="title">Bakery Survey</h1>
+    <p id="description">For a free cookie complet and submit survey.</p>
+    <fieldset>
+    <form id="survey-form">
+        <div>
+      <label id="name-label">Name<input id="name" type="text" placeholder="Name"required ></label>
+      <label id="email-label">Email<input id="email" type="email" placeholder="Email" required ></label>
+      <label id="number-label">Rating<input id="number" type="number" min="1" max="10" placeholder="Number" required ></label>
+     </div>
+     <div>
+      <label for="dropdown">What is your favorite Desert?
+      <select id="dropdown">
+        <option value=""(select one)</option>
+        <option value="1">Cookies</option>
+         <option value="2">Cheesecake</option>
+          <option value="3">Flan</option>
+           <option value="4">Muffins</option>
+           </select>
+           </label>
+           </div>
+           <div>
+          <legend class=""radio-group">How did you hear about us? (required)</legend>
+          <label for="social-media"><input value="1" id="social-media" type="radio" name="radio" /> Social Media</label>
+          <label for="friends"><input value="2" id="friends" type="radio" name="radio" /> Friends</label> 
+           <label for="sale-stand"><input value="3" id="sale-stand" type="radio" name="radio" /> Sale Stand</label>
+           <legend>How was your service? (required)</legend>
+           <label for="good">
+             <input value="1" id="good" type="checkbox" name="service" /> Good</label>
+              <label for="bad">
+             <input type="checkbox" value="2" id="bad" name="service" /> Bad</label>
+             </div>
+             <hr>
+             <label for="comments">Any comments or suggestions...
+               <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I really liked,"></textarea>
+             </label>
+             <button type="submit">Submit</button>
+          </fieldset>
+          </form>
+        </main>
+          </body>
+          </html>
